@@ -1,1 +1,16 @@
-<h1>home-page works!</h1>
+<div class="flex flex-row flex-wrap w-full justify-center">
+    <button class="rounded-lg shadow-lg" (click)="showModal()">
+        <span nz-icon nzType="phone" nzTheme="outline"></span>
+        Start call
+    </button>
+    <button class="rounded-lg shadow-lg">
+        <span nz-icon nzType="search" nzTheme="outline"></span>
+        Join call
+    </button>
+</div>
+
+<nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <ng-container *nzModalContent>
+        <p>Call code: 324325123412435</p>
+    </ng-container>
+</nz-modal>

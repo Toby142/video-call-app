@@ -12,9 +12,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import ng zorro icon
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
+
 // import nz step 
 import { NzStepsModule } from 'ng-zorro-antd/steps';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzModalModule } from 'ng-zorro-antd/modal';
+
+
+
 
 registerLocaleData(en);
 
@@ -30,7 +38,9 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     NzStepsModule,
-    NzButtonModule
+    NzButtonModule,
+    NzIconModule,
+    NzModalModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }
