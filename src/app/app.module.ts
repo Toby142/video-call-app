@@ -20,6 +20,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
+import { CallPageComponent } from './call-page/call-page.component';
 
 
 
@@ -29,7 +30,8 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    CallPageComponent
   ],
   imports: [
     BrowserModule,
