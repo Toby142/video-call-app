@@ -21,6 +21,7 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
 import { CallPageComponent } from './call-page/call-page.component';
+import { ArduinoAddonComponent } from './arduino-addon/arduino-addon.component';
 
 
 
@@ -31,7 +32,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HomePageComponent,
-    CallPageComponent
+    CallPageComponent,
+    ArduinoAddonComponent
   ],
   imports: [
     BrowserModule,
